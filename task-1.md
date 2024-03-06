@@ -16,3 +16,34 @@ Right click on the program -create -screen
 # -right click and create another screen
 ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/0e5190a0-3d49-4638-9614-3ab230e7d73f)
 ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/5da9baed-a8e4-4d67-9f4e-e480264cc67a)
+
+
+# Module pool events
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/8f4a09c9-2656-45af-b403-85a8e1ddd823)
+
+# Now we will create the buttons on 2 screens-
+when click on button on screen 100-navigate to screen 200
+when click on button on screen 200-navigate back to screen 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
