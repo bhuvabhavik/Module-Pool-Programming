@@ -126,9 +126,14 @@ SCROLL YES CONTINUE...CONTINUE..COMPLETE..🎉🎉🙌🙌🥂🥂
 - ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/aadf6734-14db-49df-b9fc-a13fbf1ac81f)
 
 
-___
-===
-***
-🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+
+NOW WE WILL WRITE THE LOGIC FOR FETCHING THE DATE IN THE ITEM TABLE
+-SO FIRST WE WILL CHECK IF THE DATA EXISTS IN THE PRIMARY OR HEADER TABLE
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/0c6aec26-087e-44ac-b65b-eb8d9f04c725)
+
+
+
+
 
 
