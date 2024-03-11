@@ -27,4 +27,27 @@ goto screen 0101 and design the subscreen for header items
 gto data/dictionary object>pass table and implement the layout for required items.
 
 ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/cb1c7c17-9aec-43fa-9bec-bdbc283847f4)
+
 same way we will go to 102 screen and designt the item layout.
+
+because item data can be multiple for one header so we will create the table control.
+
+so goto 102 screen layout and design the table control
+-drag and drop table control with wizard.
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/2ad4e070-6700-4808-a26f-b6c6f4614235)
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/079fe5b7-c885-4b8d-b8f4-6d6117a69b79)
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/3f1acdf6-998a-4852-bd37-af2390ccee96)
+
+select all/required fields and continue
+
+continue..enable scroll..continue..continue...🥂🥂🥂
+
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/99e2f955-a61b-46d4-a008-01a7496a8f2c)
+create tcode for execute
+
+>[!NOTE]
+> so now we will write the logic for displaying the data at process after input of screen 100.
+>so we will goto screen 100 code and uncommment the PAI module of screen 100 and write the code.
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/60328ebd-0e3c-4873-a2f0-bbd0fed4edd4)
+
+
