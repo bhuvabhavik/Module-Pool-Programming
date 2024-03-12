@@ -40,6 +40,15 @@ WE HAVE CREATED THE TMG
 
 NOW WE WILL GOTO SE38 AND CREATE A MODULE POOL PROGRAM.
 
+> create a new screen.
+> ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/bf61442b-cc8a-4488-b7ab-8eff71c248b1)
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/218add36-7329-4691-9b26-34077d8e188f)
+> dont have dropdown menu directly so we will take input output field as of now.
+> ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/3a629e9b-56b4-4a49-b3cb-a353cad37fb7)
+> ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/2741e601-dc62-4d16-96ac-b09bca40682e)
+
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/4cb11b46-31b1-4bfa-9cbe-c14a0788578e)
+
 
 
 
