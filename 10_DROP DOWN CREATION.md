@@ -74,7 +74,48 @@ then we have the cities of gujarat in lt_data
 >so now anyhow somehow we have to move our data from lt_data to lt_values.
 >
 >![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/86fed7a7-5b1d-4ac8-a94f-8be3277c3ef1)
->![Uploading image.png…]()
+>![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/fc033e0e-de37-46e0-b98f-96d61968983a)
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/9a7d5b4a-f610-416c-bcbb-ba9963a016cb)
+
+```abap
+*----------------------------------------------------------------------*
+***INCLUDE ZTABLE_REGION_STATUS_0100O01.
+*----------------------------------------------------------------------*
+*&---------------------------------------------------------------------*
+*& Module STATUS_0100 OUTPUT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+MODULE status_0100 OUTPUT.
+* SET PF-STATUS 'xxxxxxxx'.
+* SET TITLEBAR 'xxx'.
+ IF ztstate_region-state is not INITIAL.
+DATA LT_VALUES TYPE VRM_VALUES. " internal table
+DATA lwa_value TYPE vrm_value. "structure
+
+refresh: lt_values. "refresing the internal table
+loop at lt_data into lwa_data.
+  lwa_value-key = lwa_data-region.
+  lwa_value-text = lwa_data-region.
+  append lwa_value to lt_values.
+  ENDLOOP.
+
+    CLEAr: ZTSTATE_REGION-REGION. "clear screenfield so always fresh data comes
+   CALL FUNCTION 'VRM_SET_VALUES'
+     EXPORTING
+       id                    = 'ZTSTATE_REGION-REGION' "which field we are binding values ??
+       values                = LT_VALUES
+    EXCEPTIONS
+      ID_ILLEGAL_NAME       = 1
+      OTHERS                = 2.
+   IF sy-subrc <> 0.
+* Implement suitable error handling here
+   ENDIF.
+ ENDIF.
+ENDMODULE.
+```
+
+
 
 
 
