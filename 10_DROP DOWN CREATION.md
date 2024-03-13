@@ -49,6 +49,33 @@ NOW WE WILL GOTO SE38 AND CREATE A MODULE POOL PROGRAM.
 
 ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/4cb11b46-31b1-4bfa-9cbe-c14a0788578e)
 
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/070c068e-f4a4-4c84-ba6f-d810ff1798d6)
+
+now when user click the state suppose gujarat
+then we have the cities of gujarat in lt_data
+- we need to bind that data into region dropdown
+- so where will we write our code??
+
+> we will write in the PBO section as it is a layout specific change.
+> ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/fb43ae18-0c29-48b0-878f-52767fa31fbc)
+
+>[!TIP]
+>which function module we use to bind the data to the screen field.
+>ANSWER : VRM_SET_VALUES
+
+![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/7365516f-8373-4335-bdbc-40b0cc5ea1b4)
+
+> call function module: VRM_SET_VALUES
+
+>[!WARNING]
+> here we are passing lt_values to the function module.
+>but lt_values is empty
+>we have our data in lt_data
+>so now anyhow somehow we have to move our data from lt_data to lt_values.
+>
+>![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/86fed7a7-5b1d-4ac8-a94f-8be3277c3ef1)
+>![Uploading image.png…]()
+
 
 
 
