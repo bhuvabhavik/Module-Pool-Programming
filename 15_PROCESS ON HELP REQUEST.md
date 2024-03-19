@@ -16,6 +16,60 @@ NOW IN THE SAME FIELD WE WILL CREATE THE F1 HELP ALSO
 - now we will call the function module to call the documentation inside our module.
 - the function module name is # help_object_show, so lets call that first..
 - 😎😎😎😎
+
+```abap
+*----------------------------------------------------------------------*
+***INCLUDE ZMP_MULTIPLE_SUBSCREEN_F1HEI01.
+*----------------------------------------------------------------------*
+*&---------------------------------------------------------------------*
+*&      Module  F1HELP  INPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+MODULE f1help INPUT.
+
+*DATA DOKCLASS TYPE DSYSH-DOKCLASS.
+*DATA DOKLANGU TYPE DSYSH-DOKLANGU.
+*DATA LINKS    TYPE STANDARD TABLE OF TLINE.
+
+  CALL FUNCTION 'HELP_OBJECT_SHOW'
+    EXPORTING
+      dokclass                            = 'TX' "which we provided while creating documentation
+*     DOKLANGU                            = SY-LANGU
+      dokname                             = 'ZONO' "name we provided while creating documentation.
+*     DOKTITLE                            = ' '
+*     CALLED_BY_PROGRAM                   = ' '
+*     CALLED_BY_DYNP                      = ' '
+*     CALLED_FOR_TAB                      = ' '
+*     CALLED_FOR_FIELD                    = ' '
+*     CALLED_FOR_TAB_FLD_BTCH_INPUT       = ' '
+*     MSG_VAR_1                           = ' '
+*     MSG_VAR_2                           = ' '
+*     MSG_VAR_3                           = ' '
+*     MSG_VAR_4                           = ' '
+*     CALLED_BY_CUAPROG                   = ' '
+*     CALLED_BY_CUASTAT                   = CALLED_BY_CUASTAT
+*     SHORT_TEXT                          = ' '
+*     CLASSIC_SAPSCRIPT                   = ' '
+*     MES_PROGRAM_NAME                    = ' '
+*     MES_INCLUDE_NAME                    = ' '
+*     MES_LINE_NUMBER                     = MES_LINE_NUMBER
+*     MES_EXCEPTION                       = ' '
+*   TABLES
+*     LINKS                               = LINKS
+   EXCEPTIONS
+     OBJECT_NOT_FOUND                    = 1
+     SAPSCRIPT_ERROR                     = 2
+     OTHERS                              = 3
+            .
+  IF sy-subrc <> 0.
+* Implement suitable error handling here
+  ENDIF.
+
+
+ENDMODULE.
+```
+  
 - ![image](https://github.com/bhuvabhavik/Module-Pool-Programming/assets/49744703/bfc33ed6-cdce-47f4-ba9e-64dc2e1c0f54)
 
 
